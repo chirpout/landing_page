@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 #titlesection {
-  background: linear-gradient(rgba(170, 170, 170, 0.4), rgba(170, 170, 170, 0.5)), url("img/collaborate.jpg");
+  background: linear-gradient(rgba(45, 45, 45, 0.4), rgba(85, 85, 85, 0.5)), url("img/office_exterior.jpg");
   background-size: cover;
   text-align: center;
   color: #fff;
