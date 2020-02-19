@@ -100,15 +100,15 @@ p {
 }
 
 .fp-controlArrow.fp-prev {
-  border-color: transparent #999 transparent transparent !important;
+  border-color: transparent #dec868 transparent transparent !important;
 }
 
 .fp-controlArrow.fp-next {
-  border-color: transparent transparent transparent #999 !important;
+  border-color: transparent transparent transparent #dec868 !important;
 }
 
 .fp-slidesNav ul li a span {
-  background-color: #999;
+  background-color: #dec868;
 }
 
 .right {

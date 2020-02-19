@@ -13,14 +13,14 @@
     $(document).ready(function() {
       var sections = ['home', 'about', 'features', 'team'];
       $("#fullpage").fullpage({
-        sectionsColor: ['#fff', '#333333', '#fff', '#333333'],
+        sectionsColor: ['#fff', '#dec868', '#fff', '#dec868'],
         anchors: ['home', 'about', 'features', 'team'],
         menu: "#menu",
         slidesNavigation: true,
         scrollingSpeed: 1000,
         onLeave: function(index, nextIndex, direction) {
           $("li[data-menuanchor=\'" + sections[index - 1] + "\'] a").css('color', '#999');
-          $("li[data-menuanchor=\'" + sections[nextIndex - 1] + "\'] a").css('color', '#09f');
+          $("li[data-menuanchor=\'" + sections[nextIndex - 1] + "\'] a").css('color', '#dec868');
         }
       });
     });
@@ -72,7 +72,7 @@
           <img src="img/placeholder_ui.png" class="featureimg">
           <div class="right">
             <h2>Report Analysis</h2>
-            <p>Have your concern amplified by contributing as a key data point in your workplace's environment report.</p>
+            <p>Have your concern amplified by contributing as a key data point to your workplace's environment report.</p>
           </div>
         </div>
       </div>
