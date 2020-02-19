@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="jquery.fullPage.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="icon" type="image/png" href="img/icon.png">
+  <script type="text/javascript" src="jquery.fullPage.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      var sections = ['home', 'about', 'features', 'team'];
+      $("#fullpage").fullpage({
+        sectionsColor: ['#fff', '#333333', '#fff', '#333333'],
+        anchors: ['home', 'about', 'features', 'team'],
+        menu: "#menu",
+        slidesNavigation: true,
+        scrollingSpeed: 1000,
+        onLeave: function(index, nextIndex, direction) {
+          $("li[data-menuanchor=\'" + sections[index - 1] + "\'] a").css('color', '#999');
+          $("li[data-menuanchor=\'" + sections[nextIndex - 1] + "\'] a").css('color', '#09f');
+        }
+      });
+    });
+  </script>
+  <title>ChirpOut</title>
+</head>
+<body>
+  <!-- Top navigation bar. -->
+  <ul id="menu">
+    <li data-menuanchor="home" id="logo"><a href="#home">ChirpOut</a></li>
+    <li data-menuanchor="about"><a href="#about">About</a></li>
+    <li data-menuanchor="features"><a href="#features">Features</a></li>
+    <li data-menuanchor="team"><a href="#team">Team</a></li>
+    <li class="logo"><a href="#home"><img src="img/icon.png"></a></li>
+  </ul>
+
+  <div id="fullpage">
+    <!-- Panel for introducing application and purpose. -->
+    <div class="section" id="titlesection">
+      <div class="intro">
+        <h1><span>ChirpOut</span></h1>
+        <h1>The platform dedicated to increasing transparency in the workplace.</h1>
+      </div>
+    </div>
+
+    <!-- Panel for describing the problem space and solution. -->
+    <div class="section" id="aboutsection">
+      <div class="intro">
+        <h2>The Problem</h2>
+        <p>Something something here</p>
+        <h2>Our Solution</h2>
+        <p>ChirpOut is a secure, anonymous platform for professionals to safely report concerns they have with their workplace. Its automated data analysis processes then aggregate reports to discover new or ongoing workplace trends. All analyses are published, for anyone to view at anytime.</p>
+      </div>
+    </div>
+
+    <!-- Panel for outlining key features of the solution, including supporting images. -->
+    <div class="section" id="featuresection">
+      <div class="slide">
+        <div class="intro">
+          <img src="img/placeholder_ui.png" class="featureimg">
+          <div class="right">
+            <h2>Anonymous Reporting</h2>
+            <p>Chirp your workplace concerns with our completely anonymous reporting tool.</p>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="intro">
+          <img src="img/placeholder_ui.png" class="featureimg">
+          <div class="right">
+            <h2>Report Analysis</h2>
+            <p>Have your concern amplified by contributing as a key data point in your workplace's environment report.</p>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="intro">
+          <img src="img/placeholder_ui.png" class="featureimg">
+          <div class="right">
+            <h2>Workplace Dashboards</h2>
+            <p>Freely browse trends across your workplace, industry, or region with our suite of data analysis tools, viewable on a customizable dashboard.</p>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="intro">
+          <img src="img/placeholder_ui.png" class="featureimg">
+          <div class="right">
+            <h2>Security Assurance</h2>
+            <p>Your anoniminity and safety is our first priority.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Panel for team, sponsor, and iSchool information. -->
+    <div class="section" id="teamsection">
+      <div class="intro">
+        <h2>Our Team</h2>
+        <p>This project is generously sponsored by Last Myle LLC, in cooperation with the University of Washington's Information School 2020 <a href="https://ischool.uw.edu/capstone">Capstone course</a>.</p>
+          <ul>
+            <li>
+              <div class="imgcircle">
+                <img src="img/brandon.png">
+              </div>
+              <h4>Brandon Hong</h4>
+              <p>bkhong@uw.edu</p>
+            </li>
+            <li>
+              <div class="imgcircle">
+                <img src="img/drew.jpg">
+              </div>
+              <h4>Drew Gallardo</h4>
+              <p>geruh@uw.edu</p>
+            </li>
+            <li>
+              <div class="imgcircle">
+                <img src="img/christina.jpg">
+              </div>
+              <h4>Christina Stanfield</h4>
+              <p>cstanf@uw.edu</p>
+            </li>
+            <li>
+              <div class="imgcircle">
+                <img src="img/israel.jpg">
+              </div>
+              <h4>Israel Sixto</h4>
+              <p>sixtoisr@uw.edu</p>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
